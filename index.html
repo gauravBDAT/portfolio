@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Card Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎂 Birthday Card Generator</h1>
+
+    <input type="text" id="nameInput" placeholder="Enter recipient's name" />
+    <textarea id="messageInput" placeholder="Enter your birthday message"></textarea>
+    <button onclick="generateCard()">Generate Card</button>
+
+    <div id="card" class="card hidden">
+      <h2>Happy Birthday, <span id="cardName"></span>! 🎉</h2>
+      <p id="cardMessage"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
